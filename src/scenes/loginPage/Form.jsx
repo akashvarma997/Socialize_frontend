@@ -68,7 +68,7 @@ const Form = () => {
     console.log(values.picture.name);
 
     const savedUserResponse = await fetch(
-      "http://localhost:3001/auth/register",
+      "https://socialize-8q5g.onrender.com/auth/register",
       {
         method: "POST",
         body: formData,
@@ -85,7 +85,7 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => { // onSubmitProps provides no. of functions with formik.
     console.log(values)
-    const loggedInResponse = await fetch("http://localhost:3001/auth/login", {
+    const loggedInResponse = await fetch("https://socialize-8q5g.onrender.com/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),

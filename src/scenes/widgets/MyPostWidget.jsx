@@ -48,7 +48,7 @@ const MyPostWidget = ({ picturePath }) => {
 
     console.log(formData);
 
-    const response = await fetch(`http://localhost:3001/posts`, {
+    const response = await fetch(`https://socialize-8q5g.onrender.com/posts`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` },
       body: formData,
